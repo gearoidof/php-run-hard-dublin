@@ -5,16 +5,21 @@ var cardElement = elements.create('card');
 cardElement.mount('#card-element');
 
 var cardholderName = document.getElementById('cardholder-name');
+var cardholderEmail = document.getElementById('cardholder-email');
+var playerName = document.getElementById('player-name');
+
 var cardButton = document.getElementById('card-button');
-var clientSecret = document.getElementById('client_secret').value;
+var clientSecret = document.getElementById('client-secret').value;
 
 cardButton.addEventListener('click', function(ev) {
-  console.log("click");
-  console.log(cardholderName.value);
   stripe.handleCardPayment(
     clientSecret, cardElement, {
       payment_method_data: {
-        billing_details: {name: cardholderName.value}
+        billing_details: {
+          name: cardholderName.value, 
+          email: cardholderEmail.value,
+          metadata: playerName: playerName.value
+        }
       }
     }
   ).then(function(result) {

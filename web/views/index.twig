@@ -19,7 +19,7 @@
           <fieldset>
             <label>
               <span>Player Name</span>
-              <input name="player_name" class="field" placeholder="Player Name" required>
+              <input name="player_name" id="player-name" class="field" placeholder="Player Name" required>
             </label>
             <label>
               <span>Name on Card</span>
@@ -27,7 +27,7 @@
             </label>
             <label>
               <span>Email</span>
-              <input name="email" type="email" class="field" placeholder="example@example.com" required>
+              <input name="email" id="cardholder-email" type="email" class="field" placeholder="example@example.com" required>
             </label>
           </fieldset>
         </section>
@@ -41,7 +41,7 @@
             </fieldset>
           </div>
         </section>
-        <input type="hidden" id="client_secret" name="client_secret" value="{{ client_secret }}">
+        <input type="hidden" id="client-secret" name="client_secret" value="{{ client_secret }}">
         <button id="card-button">Pay €20</button>
       </form>
     </div>
