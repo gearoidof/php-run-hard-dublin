@@ -23,14 +23,12 @@ $intent = \Stripe\PaymentIntent::create([
     'currency' => 'eur',
 ]);
 
-echo($intent->client_secret);
-
-$app->assign('client_secret',$intent->client_secret);
 // Our web handlers
 
 $app->get('/', function() use($app) {
   $app['monolog']->addDebug('logging output.');
-  return $app['twig']->render('index.twig');
+  return $app['twig']->render('index.twig', 
+  	array('client_secret' => $intent->client_secret));
 });
 
 $app->get('/schedule', function() use($app) {
