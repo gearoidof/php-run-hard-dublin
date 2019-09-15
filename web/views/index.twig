@@ -1,20 +1,15 @@
 {% extends "layout.html" %}
 
 {% block content %}
-<div class="jumbotron text-center">
-  <div class="container">
+<div class="container">
+  <div class="row">
     <a href="/" class="lang-logo">
       <img src="/images/logo.jpg">
     </a>
     <h1>Dublin Run Hard Indoor League</h1>
-    <p>This is a sample PHP application deployed to Heroku. It's a reasonably simple app - but a good foundation for understanding how to get the most out of the Heroku platform.</p>
-    <a type="button" class="btn btn-lg btn-default" href="https://devcenter.heroku.com/articles/getting-started-with-php"><span class="glyphicon glyphicon-flash"></span> Getting Started with PHP</a>
-    <a type="button" class="btn btn-lg btn-primary" href="https://github.com/heroku/php-getting-started"><span class="glyphicon glyphicon-download"></span> Source on GitHub</a>
   </div>
-</div>
-<div class="container">
   <div class="row">
-    <div class="col-lg-12">
+    <div class="col-sm-4 col-lg-12">
       <h3><span class="glyphicon glyphicon-euro"></span> Pay for the Indoor League</h3>
 <form id="payment-form" method="POST" action="/orders">
         <p class="instruction">Pay for the Indoor League</p>
@@ -26,48 +21,11 @@
             </label>
             <label>
               <span>Name on Card</span>
-              <input name="name" class="field" placeholder="Name on Card" required>
+              <input name="name" id="cardholder-name" class="field" placeholder="Name on Card" required>
             </label>
             <label>
               <span>Email</span>
               <input name="email" type="email" class="field" placeholder="example@example.com" required>
-            </label>
-            <label>
-              <span>Phone</span>
-              <input name="phone" class="field" placeholder="+353 87 1231231">
-            </label>
-            <label class="select">
-              <span>Country</span>
-              <div id="country" class="field IE">
-                <select name="country">
-                  <option value="AU">Australia</option>
-                  <option value="AT">Austria</option>
-                  <option value="BE">Belgium</option>
-                  <option value="BR">Brazil</option>
-                  <option value="CA">Canada</option>
-                  <option value="CN">China</option>
-                  <option value="DK">Denmark</option>
-                  <option value="FI">Finland</option>
-                  <option value="FR">France</option>
-                  <option value="DE">Germany</option>
-                  <option value="HK">Hong Kong</option>
-                  <option value="IE" selected="selected">Ireland</option>
-                  <option value="IT">Italy</option>
-                  <option value="JP">Japan</option>
-                  <option value="LU">Luxembourg</option>
-                  <option value="MX">Mexico</option>
-                  <option value="NL">Netherlands</option>
-                  <option value="NZ">New Zealand</option>
-                  <option value="NO">Norway</option>
-                  <option value="PT">Portugal</option>
-                  <option value="SG">Singapore</option>
-                  <option value="ES">Spain</option>
-                  <option value="SE">Sweden</option>
-                  <option value="CH">Switzerland</option>
-                  <option value="GB">United Kingdom</option>
-                  <option value="US">United States</option>
-                </select>
-              </div>
             </label>
           </fieldset>
         </section>
@@ -81,7 +39,8 @@
             </fieldset>
           </div>
         </section>
-        <button type="submit">Pay €20</button>
+        <input type="hidden" id="client_secret" name="client_secret" value="{{ client_secret }}">
+        <button type="submit" id="card-button">Pay €20</button>
       </form>
     </div>
   </div> <!-- row -->
