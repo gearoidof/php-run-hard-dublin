@@ -30,7 +30,7 @@ $app->get('/', function() use($app) {
   
   $hidden_field_hack = "<input type='hidden' id='client_secret' name='client_secret' value='{$intent->client_secret}'>";
   return $app['twig']->render('index.twig', 
-    array('client_secret' => $hidden_field_hack));
+    array('client_secret' => $intent->client_secret));
 });
 
 $app->get('/schedule', function() use($app) {
