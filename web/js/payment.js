@@ -39,7 +39,7 @@ cardButton.addEventListener('click', function(ev) {
     } else {
 
       confirmationElement.querySelector('.note').innerText =
-        'You should receive a receipt to your email address shortly.';
+        "We just sent your receipt to your email address, We'll be in touch soon with more details.";
       mainElement.classList.add('success');
     }
   });
