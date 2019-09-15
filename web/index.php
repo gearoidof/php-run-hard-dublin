@@ -23,6 +23,8 @@ $intent = \Stripe\PaymentIntent::create([
     'currency' => 'eur',
 ]);
 
+$client_secret = $intent->client_secret;
+
 // Our web handlers
 
 $app->get('/', function() use($app) {
