@@ -19,12 +19,12 @@ cardButton.addEventListener('click', function(ev) {
           name: cardholderName.value, 
           email: cardholderEmail.value
         },
-        receipt_email: cardholderEmail.value,
         metadata: {
           player_name: playerName.value
-        },
-        description: playerName.value
-      }
+        }
+      },
+      receipt_email: cardholderEmail.value,
+      description: playerName.value
     }
   ).then(function(result) {
     if (result.error) {
