@@ -207,18 +207,9 @@ button:active {
 }
 
 #confirmation {
-  display: flex;
-  align-items: center;
-  position: absolute;
-  top: 500px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
   visibility: hidden;
   overflow-x: hidden;
   opacity: 0;
-  background: #f8fbfd;
   text-align: left;
   transition: visibility 0s, opacity 0.5s linear 0.5s;
 }
@@ -237,10 +228,4 @@ visibility: visible;
 #main.success .status.error
 {
   display: none;
-}
-
-#main_form.success #payment-space,
-#main_form.error #payment-space {
-  visibility: hidden;
-  opacity: 0;
 }
