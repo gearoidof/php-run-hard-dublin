@@ -1,6 +1,6 @@
 {
-  "name": "Start on Heroku: PHP",
-  "description": "A barebones PHP app that makes use of the Silex web framework",
-  "repository": "https://github.com/heroku/php-getting-started",
+  "name": "Run Hard Dublin Payment Page: PHP",
+  "description": "A barebones PHP app that makes use of the Silex web framework to get money for Run Hard",
+  "repository": "https://github.com/gearoidof/php-run-hard-dublin",
   "addons": []
 }
