@@ -223,25 +223,30 @@ button:active {
   transition: visibility 0s, opacity 0.5s linear 0.5s;
 }
 
-#main_form.success #confirmation,
-#main_form.error #confirmation {
+#main_form.success #confirmation.success
+{
   visibility: visible;
-  opacity: 1;
+  opacity: 1;  
 }
+
+#main_form.error #confirmation.error {
+visibility: visible;
+  opacity: 1;  
+}
+
 
 #main.error #confirmation .status.success
 {
   display: none;
 }
 
-
 #main.success .status.error
 {
   display: none;
 }
 
-#main_form.success #payment-form,
-#main_form.error #payment-form {
+#main_form.success #payment-space,
+#main_form.error #payment-space {
   visibility: hidden;
   opacity: 0;
 }
