@@ -239,7 +239,6 @@ button:active {
 {
   display: none;
 }
-}
 
 #main_form.success #payment-form,
 #main_form.error #payment-form {
