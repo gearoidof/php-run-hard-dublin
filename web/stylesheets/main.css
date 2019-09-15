@@ -210,7 +210,7 @@ button:active {
   display: flex;
   align-items: center;
   position: absolute;
-  top: 80px;
+  top: 500px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -223,14 +223,14 @@ button:active {
   transition: visibility 0s, opacity 0.5s linear 0.5s;
 }
 
-#main.success #confirmation,
-#main.error #confirmation {
+#main_form.success #confirmation,
+#main_form.error #confirmation {
   visibility: visible;
   opacity: 1;
 }
 
-#main.success #payment-form,
-#main.error #payment-form {
+#main_form.success #payment-form,
+#main_form.error #payment-form {
   visibility: hidden;
   opacity: 0;
 }
