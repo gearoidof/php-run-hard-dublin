@@ -26,7 +26,6 @@ cardButton.addEventListener('click', function(ev) {
           player_name: playerName.value
         }
       },
-      description: "Run hard Dublin Indoor league",
       receipt_email: cardholderEmail.value
     }
   ).then(function(result) {
