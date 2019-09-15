@@ -205,3 +205,20 @@ button:hover {
 button:active {
   background: #43458b;
 }
+
+#confirmation {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  visibility: hidden;
+  overflow-x: hidden;
+  opacity: 0;
+  background: #f8fbfd;
+  text-align: left;
+  transition: visibility 0s, opacity 0.5s linear 0.5s;
+}

@@ -24,7 +24,8 @@ cardButton.addEventListener('click', function(ev) {
         },
         metadata: {
           player_name: playerName.value
-        }
+        },
+        description: "Run hard Dublin Indoor league"
       },
       receipt_email: cardholderEmail.value
     }
@@ -36,6 +37,7 @@ cardButton.addEventListener('click', function(ev) {
         error.message;
       mainElement.classList.add('error');
     } else {
+
       confirmationElement.querySelector('.note').innerText =
         'We just sent your receipt to your email address, and your items will be on their way shortly.';
       mainElement.classList.add('success');
