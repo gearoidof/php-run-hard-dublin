@@ -229,16 +229,3 @@ visibility: visible;
 {
   display: none;
 }
-
-#payment-request {
-  visibility: hidden;
-  opacity: 0;
-  min-height: 100px;
-  padding: 20px 0;
-  transition: visibility 0s, opacity 0.3s ease-in;
-}
-
-#payment-request.visible {
-  visibility: visible;
-  opacity: 1;
-}
