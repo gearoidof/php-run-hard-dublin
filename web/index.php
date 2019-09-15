@@ -20,7 +20,7 @@ $app->register(new Silex\Provider\TwigServiceProvider(), array(
 
 $app->get('/', function() use($app) {
   // Create Payment Intent with Stripe
-  \Stripe\Stripe::setApiKey('sk_test_U0Otn7howvy1l89A1Ef73T8o');
+  \Stripe\Stripe::setApiKey(getenv('secret_key'));
 
   $intent = \Stripe\PaymentIntent::create([
     'amount' => 2000,
