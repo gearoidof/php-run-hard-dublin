@@ -24,9 +24,9 @@ cardButton.addEventListener('click', function(ev) {
         },
         metadata: {
           player_name: playerName.value
-        },
-        description: "Run hard Dublin Indoor league"
+        }
       },
+      description: "Run hard Dublin Indoor league",
       receipt_email: cardholderEmail.value
     }
   ).then(function(result) {
@@ -34,7 +34,7 @@ cardButton.addEventListener('click', function(ev) {
     const confirmationElement = document.getElementById('confirmation');
     if (result.error) {
       confirmationElement.querySelector('.error-message').innerText =
-        error.message;
+        result.error.message;
       mainElement.classList.add('error');
     } else {
 
