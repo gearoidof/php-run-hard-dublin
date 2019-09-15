@@ -15,6 +15,14 @@ $app->register(new Silex\Provider\TwigServiceProvider(), array(
     'twig.path' => __DIR__.'/views',
 ));
 
+// Create Payment Intent with Stripe
+\Stripe\Stripe::setApiKey('sk_test_U0Otn7howvy1l89A1Ef73T8o');
+
+$intent = \Stripe\PaymentIntent::create([
+    'amount' => 2000,
+    'currency' => 'eur',
+]);
+
 // Our web handlers
 
 $app->get('/', function() use($app) {

@@ -3,7 +3,8 @@
     "silex/silex": "^2.0.4",
     "monolog/monolog": "^1.22",
     "twig/twig": "^2.0",
-    "symfony/twig-bridge": "^3"
+    "symfony/twig-bridge": "^3",
+    "stripe/stripe-php": "^7.1.0"
   },
   "require-dev": {
     "heroku/heroku-buildpack-php": "*"
