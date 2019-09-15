@@ -25,12 +25,10 @@ $intent = \Stripe\PaymentIntent::create([
 
 // Our web handlers
 
-echo($intent->client_secret);
-
 $app->get('/', function() use($app) {
   $app['monolog']->addDebug('logging output.');
   return $app['twig']->render('index.twig', 
-  	array('clientSecret' => $intent->client_secret));
+  	array('intent' => $intent));
 });
 
 $app->get('/schedule', function() use($app) {
