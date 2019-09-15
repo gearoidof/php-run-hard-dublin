@@ -223,17 +223,11 @@ button:active {
   transition: visibility 0s, opacity 0.5s linear 0.5s;
 }
 
-#main_form.success #confirmation.success
-{
-  visibility: visible;
-  opacity: 1;  
-}
-
-#main_form.error #confirmation.error {
+#main_form.success #confirmation,
+#main_form.error #confirmation {
 visibility: visible;
   opacity: 1;  
 }
-
 
 #main.error #confirmation .status.success
 {
