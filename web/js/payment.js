@@ -23,8 +23,7 @@ cardButton.addEventListener('click', function(ev) {
           player_name: playerName.value
         }
       },
-      receipt_email: cardholderEmail.value,
-      description: playerName.value
+      receipt_email: cardholderEmail.value
     }
   ).then(function(result) {
     if (result.error) {
