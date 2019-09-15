@@ -29,7 +29,7 @@ $app->get('/', function() use($app) {
   $app['monolog']->addDebug('logging output.');
   
   return $app['twig']->render('index.twig', 
-    array('intent' => $intent));
+    array('client_secret' => $intent->client_secret));
 });
 
 $app->get('/schedule', function() use($app) {
