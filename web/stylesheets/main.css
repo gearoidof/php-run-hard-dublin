@@ -229,6 +229,18 @@ button:active {
   opacity: 1;
 }
 
+#main.error #confirmation .status.success
+{
+  display: none;
+}
+
+
+#main.success .status.error
+{
+  display: none;
+}
+}
+
 #main_form.success #payment-form,
 #main_form.error #payment-form {
   visibility: hidden;
