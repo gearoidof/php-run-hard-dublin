@@ -6,7 +6,7 @@
     <a href="/" class="lang-logo">
       <img src="/images/lang-logo.png">
     </a>
-    <h1>{{ client_secret }} Getting Started with PHP on Heroku</h1>
+    <h1>{{ clientSecret }} Getting Started with PHP on Heroku</h1>
     <p>This is a sample PHP application deployed to Heroku. It's a reasonably simple app - but a good foundation for understanding how to get the most out of the Heroku platform.</p>
     <a type="button" class="btn btn-lg btn-default" href="https://devcenter.heroku.com/articles/getting-started-with-php"><span class="glyphicon glyphicon-flash"></span> Getting Started with PHP</a>
     <a type="button" class="btn btn-lg btn-primary" href="https://github.com/heroku/php-getting-started"><span class="glyphicon glyphicon-download"></span> Source on GitHub</a>
@@ -20,7 +20,7 @@
         <p class="instruction">Pay for the Indoor League</p>
         <section>
           <h2>Registration Information</h2>
-          <fieldset class="with-state">
+          <fieldset>
             <label>
               <span>Name</span>
               <input name="name" class="field" placeholder="Player Name" required>
@@ -31,19 +31,7 @@
             </label>
             <label>
               <span>Phone</span>
-              <input name="phone" class="field" placeholder="+353863745834 ">
-            </label>
-            <label>
-              <span>Address</span>
-              <input name="address" class="field" placeholder="185 Berry Street Suite 550">
-            </label>
-            <label>
-              <span>City</span>
-              <input name="city" class="field" placeholder="San Francisco">
-            </label>
-            <label class="state">
-              <span>State</span>
-              <input name="state" class="field" placeholder="CA">
+              <input name="phone" class="field" placeholder="+353 87 1231231">
             </label>
             <label class="zip">
               <span>ZIP</span>
@@ -51,7 +39,7 @@
             </label>
             <label class="select">
               <span>Country</span>
-              <div id="country" class="field US">
+              <div id="country" class="field IE">
                 <select name="country">
                   <option value="AU">Australia</option>
                   <option value="AT">Austria</option>
@@ -85,55 +73,6 @@
           </fieldset>
         </section>
         <section>
-          <h2>Payment Information</h2>
-          <nav id="payment-methods">
-            <ul>
-              <li>
-                <input type="radio" name="payment" id="payment-card" value="card" checked>
-                <label for="payment-card">Card</label>
-              </li>
-              <li>
-                <input type="radio" name="payment" id="payment-ach_credit_transfer" value="ach_credit_transfer" checked>
-                <label for="payment-ach_credit_transfer">Bank Transfer</label>
-              </li>
-              <li>
-                <input type="radio" name="payment" id="payment-alipay" value="alipay">
-                <label for="payment-alipay">Alipay</label>
-              </li>
-              <li>
-                <input type="radio" name="payment" id="payment-bancontact" value="bancontact">
-                <label for="payment-bancontact">Bancontact</label>
-              </li>
-              <li>
-                <input type="radio" name="payment" id="payment-eps" value="eps">
-                <label for="payment-eps">EPS</label>
-              </li>
-              <li>
-                <input type="radio" name="payment" id="payment-ideal" value="ideal">
-                <label for="payment-ideal">iDEAL</label>
-              </li>
-              <li>
-                <input type="radio" name="payment" id="payment-giropay" value="giropay">
-                <label for="payment-giropay">Giropay</label>
-              </li>
-              <li>
-                <input type="radio" name="payment" id="payment-multibanco" value="multibanco">
-                <label for="payment-multibanco">Multibanco</label>
-              </li>
-              <li>
-                <input type="radio" name="payment" id="payment-sepa_debit" value="sepa_debit">
-                <label for="payment-sepa_debit">SEPA Direct Debit</label>
-              </li>
-              <li>
-                <input type="radio" name="payment" id="payment-sofort" value="sofort">
-                <label for="payment-sofort">SOFORT</label>
-              </li>
-              <li>
-                <input type="radio" name="payment" id="payment-wechat" value="wechat">
-                <label for="payment-wechat">WeChat Pay</label>
-              </li>
-            </ul>
-          </nav>
           <div class="payment-info card visible">
             <fieldset>
               <label>
