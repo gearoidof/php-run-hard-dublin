@@ -31,7 +31,7 @@ cardButton.addEventListener('click', function(ev) {
   ).then(function(result) {
     const mainElement = document.getElementById('main_form');
     const confirmationElement = document.getElementById('confirmation');
-    document.getElementById('payment_space').outerHTML = "";
+    document.getElementById('payment-space').outerHTML = "";
     if (result.error) {
       confirmationElement.querySelector('.error-message').innerText =
         result.error.message;
