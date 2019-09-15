@@ -25,7 +25,7 @@ $intent = \Stripe\PaymentIntent::create([
 
 echo($intent->client_secret);
 
-$app->assign('client_secret',$intent->client_secret)
+$app->assign('client_secret',$intent->client_secret);
 // Our web handlers
 
 $app->get('/', function() use($app) {
