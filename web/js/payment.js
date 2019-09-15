@@ -18,10 +18,10 @@ cardButton.addEventListener('click', function(ev) {
         billing_details: {
           name: cardholderName.value, 
           email: cardholderEmail.value
-        },
-        metadata: {
-          player_name: playerName.value
         }
+      },
+      metadata: {
+        player_name: playerName.value
       }
     }
   ).then(function(result) {
