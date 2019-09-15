@@ -6,7 +6,7 @@ cardElement.mount('#card-element');
 
 var cardholderName = document.getElementById('cardholder-name');
 var cardButton = document.getElementById('card-button');
-var clientSecret = document.getElementById('client_secret');
+var clientSecret = document.getElementById('client_secret').value;
 
 cardButton.addEventListener('click', function(ev) {
   console.log("click");

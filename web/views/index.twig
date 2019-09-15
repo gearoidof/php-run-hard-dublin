@@ -10,8 +10,10 @@
   </div>
   <div class="row">
     <div class="col-sm-4 col-lg-12">
-      <h3><span class="glyphicon glyphicon-euro"></span> Pay for the Indoor League</h3>
-<form id="payment-form">
+      <h3>
+        <span class="glyphicon glyphicon-euro"></span> Pay for the Indoor League
+      </h3>
+      <form id="payment-form" action="#">
         <p class="instruction">Pay for the Indoor League</p>
         <section>
           <fieldset>
@@ -39,7 +41,7 @@
             </fieldset>
           </div>
         </section>
-        <input type="hidden" id="client_secret" name="client_secret" value="{{ client_secret }}">
+        {{ client_secret }}
         <button id="card-button">Pay €20</button>
       </form>
     </div>
