@@ -222,3 +222,15 @@ button:active {
   text-align: left;
   transition: visibility 0s, opacity 0.5s linear 0.5s;
 }
+
+#main.success #confirmation,
+#main.error #confirmation {
+  visibility: visible;
+  opacity: 1;
+}
+
+#main.success #payment-form,
+#main.error #payment-form {
+  visibility: hidden;
+  opacity: 0;
+}
