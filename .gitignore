@@ -1,2 +1,5 @@
 vendor/
 .env
+.DS_Store
+web/.DS_Store
+web/images/.DS_Store
