@@ -23,7 +23,7 @@ $app->get('/', function() use($app) {
   \Stripe\Stripe::setApiKey(getenv('secret_key'));
 
   $intent = \Stripe\PaymentIntent::create([
-    'amount' => 2000,
+    'amount' => 500,
     'currency' => 'eur',
   ]);
   $app['monolog']->addDebug('logging output.');
